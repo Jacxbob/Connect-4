@@ -1,0 +1,3 @@
+the tree of possible boards is traversed via the leaf nodes, (all the way along the bottom), then, depending on whether the player is the minimiser
+or the maximiser, the computer will assume they take the best possible outcome. This value (smallest or largest based on maxi or mini) is passed to 
+the parent node of these 7. This continues on this depth (one above), then to the next depth, then the next, untill the parent node is reached.

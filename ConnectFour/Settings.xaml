@@ -1,0 +1,67 @@
+﻿<Page x:Class="ConnectFour.Settings"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ConnectFour"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="600"
+      Title="Settings">
+
+    <Page.Resources>
+        <Style TargetType="{x:Type Button}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Grid Background="{TemplateBinding Background}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Page.Resources>
+
+    <Grid>
+        <Viewbox HorizontalAlignment="Left" Margin="31,80,0,35">
+            <Slider x:Name="Difficulty" Orientation="Vertical" Width="20" Height="243" />
+        </Viewbox>
+        <Viewbox Margin="410,204,25,0" VerticalAlignment="Top" >
+            <ComboBox x:Name="cbxBackground" Width="241" Height="30" SelectionChanged="cbxBackground_SelectionChanged" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <ComboBoxItem Content="antarctica"/>
+                <ComboBoxItem Content="bloody_mary"/>
+                <ComboBoxItem Content="cactus"/>
+                <ComboBoxItem Content="celestial"/>
+                <ComboBoxItem Content="clean_mirror"/>
+                <ComboBoxItem Content="eternal_constance"/>
+                <ComboBoxItem Content="everlasting_sky"/>
+                <ComboBoxItem Content="exotic"/>
+                <ComboBoxItem Content="green_beach"/>
+                <ComboBoxItem Content="juicy_peach"/>
+                <ComboBoxItem Content="kashmir"/>
+                <ComboBoxItem Content="lime"/>
+                <ComboBoxItem Content="mountain_rock"/>
+                <ComboBoxItem Content="no_mans"/>
+                <ComboBoxItem Content="ocean_blue"/>
+                <ComboBoxItem Content="piglet"/>
+                <ComboBoxItem Content="plum_plate"/>
+                <ComboBoxItem Content="purple_lake"/>
+                <ComboBoxItem Content="quepal"/>
+                <ComboBoxItem Content="sweet_morning"/>
+                <ComboBoxItem Content="toxic"/>
+                <ComboBoxItem Content="winter_neva"/>
+                <ComboBoxItem Content="yosemite"/>
+            </ComboBox>
+
+        </Viewbox>
+
+        <Viewbox Margin="410,80,25,0" VerticalAlignment="Top" >
+            <ComboBox x:Name="cbxMusic" Width="241" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center" SelectionChanged="cbxMusic_SelectionChanged">
+                <ComboBoxItem Content="DropIt"/>
+
+            </ComboBox>
+
+        </Viewbox>
+
+    </Grid>
+</Page>
